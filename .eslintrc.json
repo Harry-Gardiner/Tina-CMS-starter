@@ -1,17 +1,28 @@
 {
-    "env": {
-        "browser": true,
-        "node": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "next"
-    ],
-    "rules": {
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next"
+  ],
+  "rules": {
     "padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": "import", "next": "*" },
-      { "blankLine": "any", "prev": "import", "next": "import" }
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
+      }
     ]
-  }
+  },
+  "ignorePatterns": [
+    "tina/__generated__/types.d.ts"
+  ]
 }
