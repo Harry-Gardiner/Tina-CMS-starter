@@ -18,7 +18,7 @@ export default function ClientPage(props: ClientPageProps) {
     variables: props.variables,
     data: props.data,
   });
-
+  
   const content = data.page.body;
   return (
     <div data-tina-field={tinaField(data.page, "body")}>
