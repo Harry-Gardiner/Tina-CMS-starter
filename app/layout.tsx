@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import './styles/main.scss'
 
 export default function RootLayout({
   children,
